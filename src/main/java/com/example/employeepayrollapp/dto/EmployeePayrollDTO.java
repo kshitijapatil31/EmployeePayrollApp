@@ -3,10 +3,8 @@ package com.example.employeepayrollapp.dto;
 public class EmployeePayrollDTO {
 
 	public String name;
-	public double salary;
-	
-	
-	public EmployeePayrollDTO(String name, double salary) {
+	public long salary;
+	public EmployeePayrollDTO(String name, long salary) {
 		super();
 		this.name = name;
 		this.salary = salary;
@@ -17,16 +15,14 @@ public class EmployeePayrollDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getSalary() {
+	public long getSalary() {
 		return salary;
 	}
-	public void setSalary(double salary) {
+	public void setSalary(long salary) {
 		this.salary = salary;
 	}
-	@Override
-	public String toString() {
-		return "EmployeePayrollDTO [name=" + name + ", salary=" + salary + "]";
-	}
+	
+	
 	
 	
 }
