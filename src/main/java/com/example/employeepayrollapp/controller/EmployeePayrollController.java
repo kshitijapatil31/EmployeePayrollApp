@@ -59,7 +59,7 @@ public class EmployeePayrollController {
 			@RequestBody EmployeePayrollDTO employeePayrollDTO) {
 		EmployeePayrollData employeePayrollData = null;
 
-		employeePayrollData = employeeService.updateEmployeePayrollData(employeePayrollDTO);
+		employeePayrollData = employeeService.updateEmployeePayrollData(empId,employeePayrollDTO);
 		ResponseDTO resDto = new ResponseDTO("update employee payroll data:", employeePayrollData);
 		return new ResponseEntity<ResponseDTO>(resDto, HttpStatus.OK);
 
