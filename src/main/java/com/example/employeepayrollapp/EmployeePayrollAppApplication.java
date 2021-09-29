@@ -12,7 +12,7 @@ public class EmployeePayrollAppApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context=SpringApplication.run(EmployeePayrollAppApplication.class, args);
-		log.info("EMployee payroll app started in {} environment",context.getEnvironment().getProperty(null));
+		log.info("Employee payroll app started in {} environment",context.getEnvironment().getProperty("Environment"));
 	}
 
 }

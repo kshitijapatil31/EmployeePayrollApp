@@ -32,7 +32,7 @@ public class EmployeePayrollController {
 
 		empDataList = employeeService.getEmployeePayrollData();
 		ResponseDTO resDto = new ResponseDTO("Get Call Success", empDataList);
-		//resDto.getData();
+		resDto.getData();
 		return new ResponseEntity<ResponseDTO>(resDto, HttpStatus.OK);
 	}
 
